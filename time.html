@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style type="text/css">
+    .time-counter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-size: 72px;
+      font-weight: bold;
+      color: #f8f1f1;
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+      animation: glow 1s ease-in-out infinite alternate;
+      background-image: radial-gradient(circle at center, #6A5ACD, #483D8B);
+    }
+    
+    @keyframes glow {
+      from {
+        text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
+      }
+      to {
+        text-shadow: 1px 1px 20px rgb(239, 16, 16);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="time-counter">
+    <script type="text/javascript">
+      function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+    </script>
+    <div id="time"></div>
+  </div>
+  
+  <script>
+    startTime();
+  </script>
+</body>
+</html>
