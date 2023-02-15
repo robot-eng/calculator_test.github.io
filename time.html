@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
   <style type="text/css">
     .time-counter {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      font-size: 72px;
-      font-weight: bold;
+      font-size: 60px;
+      font-weight: normal;
       color: #f8f1f1;
       text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
       animation: glow 1s ease-in-out infinite alternate;
       background-image: radial-gradient(circle at center, #6A5ACD, #483D8B);
+      font-family: 'Orbitron', sans-serif;
     }
-    
+
+    @media only screen and (max-width: 576px) {
+      .time-counter {
+        font-size: 48px;
+        height: 100vh;
+      }
+    }
+
+    @media only screen and (min-width: 576px) and (max-width: 992px) {
+      .time-counter {
+        font-size: 64px;
+        height: 70vh;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .time-counter {
+        font-size: 72px;
+        height: 100vh;
+      }
+    }
+
     @keyframes glow {
       from {
         text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
       }
+
       to {
         text-shadow: 1px 1px 20px rgb(239, 16, 16);
       }
     }
   </style>
 </head>
+
 <body>
   <div class="time-counter">
     <script type="text/javascript">
@@ -40,15 +66,16 @@
         var t = setTimeout(startTime, 500);
       }
       function checkTime(i) {
-        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
         return i;
       }
     </script>
     <div id="time"></div>
   </div>
-  
+
   <script>
     startTime();
   </script>
 </body>
+
 </html>
