@@ -1,12 +1,28 @@
 # web_test.github.io
 
-https://robot-eng.github.io/web_test.github.io/
+<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/">calculator</a></p>
 
-https://robot-eng.github.io/web_test.github.io/login
+<p align="center">
+<img src=img/1.png width="30%">
+</p>
 
-https://robot-eng.github.io/web_test.github.io/time
+<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/login">login</a></p>
 
-https://robot-eng.github.io/web_test.github.io/login_otic/index?
+<p align="center">
+<img src=img/3.png width="30%">
+</p>
+
+<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/time">Time</a></p>
+
+<p align="center">
+<img src=img/4.png width="30%">
+</p>
+
+<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/login_otic/index?">login</a></p>
+
+<p align="center">
+<img src=img/2.png width="30%">
+</p>
 
 #### Text color 
 
