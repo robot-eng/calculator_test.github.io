@@ -221,10 +221,17 @@ body{
     pointer-events: none;
     transition: .5s ease;
 }
-.input-box input:focus~label,
-.input-box input:valid~label{
+input[type="text"]:focus + label, 
+input[type="text"]:valid + label,
+input[type="password"]:focus + label, 
+input[type="password"]:valid + label{
     top: -5px;
 }
+  /*Input focus sticky top label*/
+  .form__input:not(:placeholder-shown).form__input:not(:focus)+.form__label {
+    top: -5px;
+  }
+  
 .input-box .icon{
     position: absolute;
     top: 13px;
