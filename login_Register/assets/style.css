@@ -221,7 +221,7 @@ body{
     pointer-events: none;
     transition: .5s ease;
 }
-input[type="text"]:focus + label, 
+input[type="text"]:focus + label,
 input[type="text"]:valid + label,
 input[type="password"]:focus + label, 
 input[type="password"]:valid + label{
