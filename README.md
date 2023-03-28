@@ -18,11 +18,14 @@
 <img src=img/s.gif width="30%">
 </p>
 
-<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/login_otic/index?">login</a></p>
+<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/login_dsgin/login_dsgin?">login</a></p>
 
 <p align="center">
 <img src=img/2.png width="30%">
 </p>
+
+<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/login_Register/login_register?">login</a></p>
+
 
 #### Text color 
 
