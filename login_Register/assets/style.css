@@ -84,7 +84,7 @@ body{
 .background{
     width: 100%;
     height: 100vh;
-    background: url('/login_Register/assets/img/M.jpg') no-repeat;
+    background: url('/assets/img/M.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     filter: blur(10px);
@@ -97,7 +97,7 @@ body{
     transform: translate(-50%,-50%
     );
     height: 550px;
-    background: url('/login_Register/assets/img/M.jpg') no-repeat;
+    background: url('/assets/img/M.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
