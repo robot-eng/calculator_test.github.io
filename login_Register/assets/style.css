@@ -92,9 +92,8 @@ a.active,a:hover{
 } */
 .search-bar{
     position: absolute;
-    mask-position: 50%;
-    max-width: 300px;
-    height: 45px;
+    max-width: 200px;
+    height: 30px;
     border: 2px solid #e4e4e4;
     background: transparent;
     border-radius: 6px;
@@ -219,6 +218,7 @@ a.active,a:hover{
 }
 .logreg-box .form-box{
     position: absolute;
+
     justify-content: center;
     align-items: center;
     color: #e4e4e4;
@@ -249,7 +249,8 @@ a.active,a:hover{
 }
 .form-box .input-box{
     position: relative;
-    width: 340px;
+    display: flex;
+    width: 100%;
     height: 50px;
     border-bottom: 2px solid #e4e4e4;
     margin: 30px 0;
@@ -257,8 +258,6 @@ a.active,a:hover{
 }
 
 .input-box input{
-    width: 100%;
-    height: 100%;
     background: transparent;
     border: none;
     outline: none;
@@ -346,7 +345,6 @@ input[type="password"]:valid + label{
         top: 50%;
         transform: translate(-50%,-50%
         );
-        height: 550px;
         background: none;
         background-size: cover;
         background-position: center;
@@ -355,7 +353,7 @@ input[type="password"]:valid + label{
     }
     .container .logreg-box{
         display: inline-flex;
-        margin: auto;
+        margin: 40px 0 0 0;
         width: 100%;    
         /* background: red; */
         overflow: hidden;
@@ -369,7 +367,7 @@ input[type="password"]:valid + label{
     }
     nav ul{
         position: fixed;
-        width: 38%;
+        width: 43%;
         height: 100%;
         backdrop-filter: blur(20px);
         top: 4px;
