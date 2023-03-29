@@ -7,20 +7,28 @@
     <title>Login & Registration Form</title>
     <link rel="stylesheet" href="assets/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
         <form action="#" class="search-bar">
             <input type="text" placeholder="Search.......">
             <button type="submit"><i class='bx bx-search-alt-2'></i></button>
             
         </form>
+        </nav>
+        
     </header>
     <div class="background"></div>
     <div class="container">
@@ -95,6 +103,18 @@
             </div>
         </div>
     </div>
+    <section></section>
     <script src="assets/script.js"></script>
+    <!-- <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+        $(".btn-bar").on("click", function(){
+            $(".navbar ul".toggleClass("nav-active"))
+        })
+    });
+  </script> -->
 </body>
 </html>
