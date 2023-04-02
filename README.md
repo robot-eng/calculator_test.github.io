@@ -1,6 +1,6 @@
 # web_test.github.io
 
-<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/">calculator</a></p>
+<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/calculator">calculator</a></p>
 
 <p align="center">
 <img src=img/1.png width="30%">
