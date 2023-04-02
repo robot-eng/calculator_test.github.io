@@ -6,7 +6,7 @@
 <img src=img/1.png width="30%">
 </p>
 
-<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/login">login</a></p>
+<p>Web : <a href="https://robot-eng.github.io/web_test.github.io/login_gpt">login</a></p>
 
 <p align="center">
 <img src=img/3.png width="30%">
