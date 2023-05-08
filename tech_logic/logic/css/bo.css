@@ -9,7 +9,7 @@ body {
     align-items: center;
    
 }
-#{
+*{
   font-size: 18px;
 }
   svg {
@@ -19,7 +19,6 @@ body {
 
   p {
     margin: 10px 2px;
-    font-size: 18px;
   }
 
   label {
