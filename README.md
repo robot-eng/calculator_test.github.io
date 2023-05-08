@@ -34,3 +34,4 @@ https://www.borntodev.com/c/webdeveloper/how-to-%E0%B8%97%E0%B8%B3-text-%E0%B9%8
 
 # Project / instruction media
 
+Instruction media Logic <p>Web : <a href=" https://robot-eng.github.io/web_test.github.io/tech_logic/index.html">Logic gate</a></p>
