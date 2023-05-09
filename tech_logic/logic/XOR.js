@@ -33,7 +33,7 @@ function updateOutput() {
   const outputText2 = document.getElementById('output-text2');
   outputText2.textContent = 'The output XOR logic gate is currently: ' + (outputValue2 ? 'true' : 'false');
 }
-
+document.getElementById('output-text2').style.fontSize = "medium";
 // const simulateButton2 = document.getElementById('simulate-button2');
 // simulateButton2.addEventListener('click', updateOutput);
 
