@@ -26,6 +26,9 @@
 
 <p>Web : <a href="https://robot-eng.github.io/web_test.github.io/login_Register/login_register?">login</a></p>
 
+<p align="center">
+<img src=img/Recording%202023-05-09%20145144.gif width="30%">
+</p>
 
 #### Text color 
 
