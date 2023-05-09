@@ -29,7 +29,7 @@ function updateOutput() {
   const outputText3 = document.getElementById('output-text3');
   outputText3.textContent = 'The output NOT logic gate is currently: ' + (outputValue3 ? 'true' : 'false');
 }
-
+document.getElementById('output-text3').style.fontSize = "medium";
 // add event listener to simulate button
 // const simulateButton3 = document.getElementById('simulate-button3');
 // simulateButton3.addEventListener('click', updateOutput);
