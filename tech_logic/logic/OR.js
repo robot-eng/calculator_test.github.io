@@ -44,7 +44,7 @@ function updateOutput() {
   const outputText1 = document.getElementById('output-text1');
   outputText1.textContent = 'The output OR logic gate is currently: ' + (outputValue1 ? 'true' : 'false');
 }
-document.getElementById('output-text1').style.fontSize = "medium";
+// document.getElementById('output-text1').style.fontSize = "medium";
 // add event listener to simulate button
 // const simulateButton1 = document.getElementById('simulate-button1');
 // simulateButton1.addEventListener('click', updateOutput);
