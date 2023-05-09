@@ -42,7 +42,7 @@ function updateOutput() {
 // add event listener to simulate button
 // const simulateButton = document.getElementById('simulate-button');
 // simulateButton.addEventListener('click', updateOutput);
-document.getElementById('output-text').style.fontSize = "medium";
+// document.getElementById('output-text').style.fontSize = "medium";
 // add event listener to input checkboxes to update the output on change
 input1Checkbox.addEventListener('change', updateOutput);
 input2Checkbox.addEventListener('change', updateOutput);
