@@ -61,22 +61,21 @@ function updateImage() {
     const blueValue = parseInt(blueSlider.value);
 
     const brightnessPercentage = brightnessValue > 0 ? brightnessValue + 100 : 100 / (1 - brightnessValue / 100);
-    const contrastPercentage = sharpnessValue;
-    const redPercentage = redValue;
-    const greenPercentage = greenValue;
-    const bluePercentage = blueValue;
+    const contrastPercentage = sharpnessValue > 0 ? sharpnessValue + 100 : 100 / (1 - sharpnessValue / 100);
+    const redPercentage = redValue > 0 ? redValue + 100 : 100 / (1 - redValue / 100);;
+    const greenPercentage = greenValue > 0 ? greenValue + 100 : 100 / (1 - greenValue / 100);;
+    const bluePercentage = blueValue > 0 ? blueValue + 100 : 100 / (1 - blueValue / 100);;
 
     currentImage.style.filter = `brightness(${brightnessPercentage}%) contrast(${contrastPercentage}%)`;
-    currentImage.style.filter += ` saturate(${redPercentage}%)`;
-    currentImage.style.filter += ` saturate(${greenPercentage}%)`;
-    currentImage.style.filter += ` saturate(${bluePercentage}%)`;
+    currentImage.style.filter += `saturate(${redPercentage}%)`;
+    currentImage.style.filter += `saturate(${greenPercentage}%)`;
+    currentImage.style.filter += `saturate(${bluePercentage}%)`;
 }
 
 function resetSliders() {
     brightnessSlider.value = 0;
-    sharpnessSlider.value = 100;
-    redSlider.value = 100;
-    greenSlider.value = 100;
-    blueSlider.value = 100;
-    updateSliderValue();
+    sharpnessSlider.value = 0;
+    redSlider.value = 0;
+    greenSlider.value = 0;
+    blueSlider.value = 0;
 }
