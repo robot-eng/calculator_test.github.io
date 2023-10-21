@@ -1,0 +1,12 @@
+.battery-status {
+    text-align: center;
+    margin: 50px;
+}
+
+#battery-level {
+    font-size: 20px;
+}
+
+#charging-status {
+    font-size: 20px;
+}
