@@ -24,26 +24,32 @@
     transition: width 0.5s ease-in-out; /* Add a smooth transition for width changes */
 }
 
-#charging-status {
+#battery-level {
     font-size: 20px;
-    margin-top: 10px;
 }
 
-#charging-status.yes::before {
-    content: "⚡";
-    margin-right: 5px;
-    animation: chargeAnimation 2s infinite;
+#charging-status {
+    font-size: 20px;
 }
 
 @keyframes chargeAnimation {
-    0%, 100% {
+    0% {
         transform: scale(1);
     }
     50% {
         transform: scale(1.2);
     }
+    100% {
+        transform: scale(1);
+    }
 }
 
+.yes::before {
+    content: "⚡"; /* Unicode symbol for lightning bolt */
+    animation: chargeAnimation 2s infinite; /* 2s duration, infinite loop */
+    display: inline-block;
+    margin-right: 5px;
+}
 /* New styles for battery indicator colors */
 #battery-fill.green {
     background-color: #4CAF50; /* Green color for the battery level */
