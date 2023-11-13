@@ -1,7 +1,7 @@
 function updateBatteryStatus() {
     const batteryStatus = document.getElementById("status");
     const batteryLevel = document.getElementById("level");
-    const batteryIndicator = document.getElementById("battery-indicator");
+    const batteryFill = document.getElementById("battery-fill");
 
     if ('getBattery' in navigator) {
         navigator.getBattery().then(function(battery) {
@@ -12,7 +12,10 @@ function updateBatteryStatus() {
             batteryStatus.textContent = battery.charging ? 'Yes' : 'No';
 
             // Update the battery indicator based on the battery level
-            batteryIndicator.style.width = percentage + '%';
+            batteryFill.style.width = percentage + '%';
+
+            // Add or remove the class for color indication
+            batteryFill.className = battery.level > 0 ? 'green' : 'gray';
         });
     } else {
         batteryStatus.innerHTML = "Battery status not supported.";
